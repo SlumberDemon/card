@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+<style>
+eCSS
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans",sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+ 
+body{
+  background: url(https://images.unsplash.com/photo-1475359524104-d101d02a042b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNzk5ODJ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTcwMzAyMDE&ixlib=rb-1.2.1&q=80&w=1080) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.profile-card{
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 10px grey;
+  border: 2px solid;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border-color: white;
+  background-color: white;
+}
+ 
+.top-section{
+  padding: 60px 40px;
+  background: transparent;
+}
+
+.pic{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 8px;
+  position: relative;
+}
+ 
+.pic:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid white;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+ 
+.pic img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+ 
+.name{
+  color: black;
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Open Sans",sans-serif;
+}
+ 
+.tag{
+  font-family: "Open Sans",sans-serif;
+  font-size: 18px;
+  color: #bbb;
+}
+ 
+.bottom-section{
+  background: transparent;
+  padding: 60px 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+ 
+.border{
+  width: 1px;
+  height: 20px;
+  background: #bbb;
+  margin: 0 30px;
+}
+ 
+.bottom-section span{
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  display: block;
+}
+ 
+.social-media{
+  position: absolute;
+  width: 100%;
+  top: -30px;
+  left: 0;
+  z-index: 1;
+}
+ 
+.social-media i{
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border-radius: 50%;
+  color: #bbb;
+  font-size: 20px;
+  line-height: 60px !important;
+  margin: 0 15px;
+  position: relative;
+}
+ 
+.social-media i:after{
+  content: "";
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  background: transparent;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.4s linear;
+}
+.social-media i:hover:after{
+    transform: scale(1.10);
+}
+</style>
+</head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SlumberDemon</title>
+    <meta property="og:title" content="SlumberDemon"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://i.ytimg.com/vi/gUIJ-UkQsXI/maxresdefault.jpg"/>
+    <meta property="og:url" content="https://sleep.deta.dev"/>
+    <meta property="og:description" content="SlumberDemon's Personal site"/>
+    <meta name="url" content="https://sleep.deta.dev">
+    <meta name="theme-color" content="#7ed6df">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  </head>
+  <body>
+    <div class="profile-card">
+      <div class="top-section">
+        <div class="pic">
+          <img src="https://i.pinimg.com/564x/c0/1c/77/c01c778478b5cbe92b226ad02b118732.jpg" alt="">
+        </div>
+        <div class="name">Sofa</div>
+        <div class="tag">SlumberDemon</div>
+      </div>
+ 
+      <div class="bottom-section">
+        <div class="social-media">
+          <a href="https://github.com/SlumberDemon"><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/channel/UCWLM2AmtzOCO68MKJn7FFuQ"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com/SlumberDemon"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.planetminecraft.com/member/slumberdemon/"><i class="fas fa-link"></i></a>
+        </div>
+    </div>
+  </body>
+</html>
